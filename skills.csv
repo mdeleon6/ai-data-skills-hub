@@ -1,11 +1,11 @@
 track,factor,level,evidence,target
 AI Engineering,Foundation models,0,,2
-AI Engineering,Evaluation,0,,3
-AI Engineering,Prompt engineering,0,,3
+AI Engineering,Evaluation,3,https://rpg-classifier-eval.streamlit.app/;https://github.com/mdeleon6/rpg-classifier-eval,3
+AI Engineering,Prompt engineering,2,https://github.com/mdeleon6/rpg-classifier-eval/blob/main/analysis.ipynb,3
 AI Engineering,RAG,0,,3
 AI Engineering,Agents,0,,2
 AI Engineering,Finetuning,0,,1
-AI Engineering,Dataset engineering,0,,2
+AI Engineering,Dataset engineering,2,https://github.com/mdeleon6/rpg-classifier-eval/blob/main/analysis.ipynb,2
 AI Engineering,Inference optimization,0,,1
 AI Engineering,Architecture & feedback,0,,2
 Data Analytics,Ask,3,https://github.com/mdeleon6/indie-rpg-pricing-analysis;notes/case-study-telemetry-audit.md,3
