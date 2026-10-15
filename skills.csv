@@ -8,9 +8,9 @@ AI Engineering,Finetuning,0,,1
 AI Engineering,Dataset engineering,0,,2
 AI Engineering,Inference optimization,0,,1
 AI Engineering,Architecture & feedback,0,,2
-Data Analytics,Ask,0,,2
+Data Analytics,Ask,3,https://github.com/mdeleon6/indie-rpg-pricing-analysis;notes/case-study-telemetry-audit.md,3
 Data Analytics,Prepare,3,notes/case-study-telemetry-audit.md,3
 Data Analytics,Process,3,notes/case-study-telemetry-audit.md;notes/process-tidy-data.md,3
-Data Analytics,Analyze,0,,3
-Data Analytics,Share,0,,3
-Data Analytics,Python for analysis,0,,3
+Data Analytics,Analyze,3,https://github.com/mdeleon6/indie-rpg-pricing-analysis/blob/main/analysis.ipynb,3
+Data Analytics,Share,3,https://indie-rpg-pricing.streamlit.app/,3
+Data Analytics,Python for analysis,3,https://github.com/mdeleon6/indie-rpg-pricing-analysis;https://github.com/mdeleon6/ai-data-skills-hub,3
