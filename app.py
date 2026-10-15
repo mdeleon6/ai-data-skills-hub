@@ -4,6 +4,8 @@ import streamlit as st
 from pathlib import Path
 
 st.title("Skills Hub")
+st.caption("[Source on GitHub](https://github.com/mdeleon6/ai-data-skills-hub)")
+
 
 df = pd.read_csv("skills.csv")
 
