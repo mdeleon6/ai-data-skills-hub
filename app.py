@@ -13,6 +13,7 @@ evidence = pd.read_csv("evidence.csv")
 # Across both tracks: one row per track
 st.subheader("Overview")
 summary = df.groupby("track")[["level", "target"]].mean().round(1)
+summary["evidence pieces"] = evidence.merge(df, on="factor", how="inner").groupby("track").size()
 st.dataframe(summary)
 
 # One track at a time
