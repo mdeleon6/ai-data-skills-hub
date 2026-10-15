@@ -1,0 +1,16 @@
+track,factor,level,evidence,target
+AI Engineering,Foundation models,0,,2
+AI Engineering,Evaluation,0,,3
+AI Engineering,Prompt engineering,0,,3
+AI Engineering,RAG,0,,3
+AI Engineering,Agents,0,,2
+AI Engineering,Finetuning,0,,1
+AI Engineering,Dataset engineering,0,,2
+AI Engineering,Inference optimization,0,,1
+AI Engineering,Architecture & feedback,0,,2
+Data Analytics,Ask,0,,2
+Data Analytics,Prepare,3,notes/case-study-telemetry-audit.md,3
+Data Analytics,Process,3,notes/case-study-telemetry-audit.md;notes/process-tidy-data.md,3
+Data Analytics,Analyze,0,,3
+Data Analytics,Share,0,,3
+Data Analytics,Python for analysis,0,,3
