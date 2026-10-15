@@ -1,0 +1,14 @@
+factor,title,description,url
+Evaluation,RPG classifier eval (live app),"Claude vs Steam genre tags: precision, recall and a paired bootstrap of two prompts",https://rpg-classifier-eval.streamlit.app/
+Evaluation,RPG classifier eval (code),"Eval set, grading, error analysis and v1 vs v2 decision in a Python notebook",https://github.com/mdeleon6/rpg-classifier-eval
+Prompt engineering,RPG classifier eval (notebook),"Two prompt versions measured on the same 100 games; v2 traded false alarms for higher recall",https://github.com/mdeleon6/rpg-classifier-eval/blob/main/analysis.ipynb
+Dataset engineering,RPG classifier eval (notebook),"Built a balanced 50/50 eval set and diagnosed label noise in Steam's developer-chosen genre tags",https://github.com/mdeleon6/rpg-classifier-eval/blob/main/analysis.ipynb
+Ask,Indie RPG pricing analysis (code),"Question brief for a studio's launch-price decision, turned into a measurable question",https://github.com/mdeleon6/indie-rpg-pricing-analysis
+Ask,Telemetry audit case study,"Turned a product manager's missing-data question into a full telemetry audit at Ubisoft",notes/case-study-telemetry-audit.md
+Prepare,Telemetry audit case study,"Checked every telemetry event against its documentation to decide which data could be trusted",notes/case-study-telemetry-audit.md
+Process,Telemetry audit case study,"Fixed deprecated events at the source, so daily data cleaning became rare",notes/case-study-telemetry-audit.md
+Process,Tidy data notes,"The three tidy-data rules in my own words, applied to game telemetry",notes/process-tidy-data.md
+Analyze,Indie RPG pricing analysis (notebook),"Review scores by price band with bootstrap confidence intervals; separates real differences from noise",https://github.com/mdeleon6/indie-rpg-pricing-analysis/blob/main/analysis.ipynb
+Share,Indie RPG pricing analysis (live app),"Answer-first results page: headline, key numbers, one chart with uncertainty, caveats",https://indie-rpg-pricing.streamlit.app/
+Python for analysis,Indie RPG pricing analysis (code),"pandas analysis: joins, group-bys, binning and a hand-written bootstrap",https://github.com/mdeleon6/indie-rpg-pricing-analysis
+Python for analysis,Skills hub (code),"This hub: a Streamlit app built on two joined tables, with a radar chart and evidence cards",https://github.com/mdeleon6/ai-data-skills-hub

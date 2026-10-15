@@ -8,6 +8,7 @@ st.caption("[Source on GitHub](https://github.com/mdeleon6/ai-data-skills-hub)")
 
 
 df = pd.read_csv("skills.csv")
+evidence = pd.read_csv("evidence.csv")
 
 # Across both tracks: one row per track
 st.subheader("Overview")
@@ -38,23 +39,28 @@ st.plotly_chart(fig, width="stretch")
 
 # Evidence coverage: share of factors with any evidence, per track
 st.subheader("Evidence coverage")
-coverage = df.assign(has_evidence=df["evidence"].notna()).groupby("track")["has_evidence"].mean()
+coverage = df.assign(has_evidence=df["factor"].isin(evidence["factor"])).groupby("track")["has_evidence"].mean()
 st.dataframe(coverage.map("{:.0%}".format))
 
 # Evidence for the selected track
 st.subheader(f"Evidence: {track}")
-sorted_view = view.assign(has_evidence=view["evidence"].notna()).sort_values("has_evidence", ascending=False)
-for _, row in sorted_view.iterrows():
-    ev = row["evidence"]
-    count = 0 if pd.isna(ev) else len(ev.split(";"))
-    word = "piece" if count == 1 else "pieces"
-    with st.expander(f"{row['factor']} · level {row['level']} · {count} {word}"):
-        if pd.isna(ev):
+# LEFT JOIN: keep every factor in this track, even ones with no evidence yet
+joined = view.merge(evidence, on="factor", how="left")
+counts = joined.groupby("factor", sort=False)["url"].count()   # count() skips the empty (NaN) rows
+
+for factor in counts.sort_values(ascending=False, kind="stable").index:
+    pieces = joined[joined["factor"] == factor]
+    level = pieces["level"].iloc[0]
+    n = counts[factor]
+    word = "piece" if n == 1 else "pieces"
+    with st.expander(f"{factor} · level {level} · {n} {word}"):
+        if n == 0:
             st.caption("No evidence yet.")
-        else:
-            for item in ev.split(";"):
-                if item.startswith("http"):
-                    st.markdown(f"[Open evidence]({item})")
+        for _, p in pieces.dropna(subset=["url"]).iterrows():
+            with st.container(border=True):
+                st.markdown(f"**{p['title']}**")
+                st.caption(p["description"])
+                if p["url"].startswith("http"):
+                    st.link_button("Open", p["url"])
                 else:
-                    st.markdown(Path(item).read_text(encoding="utf-8"))
-                st.divider()
+                    st.markdown(Path(p["url"]).read_text(encoding="utf-8"))

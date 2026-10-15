@@ -1,16 +1,16 @@
-track,factor,level,evidence,target
-AI Engineering,Foundation models,0,,2
-AI Engineering,Evaluation,3,https://rpg-classifier-eval.streamlit.app/;https://github.com/mdeleon6/rpg-classifier-eval,3
-AI Engineering,Prompt engineering,2,https://github.com/mdeleon6/rpg-classifier-eval/blob/main/analysis.ipynb,3
-AI Engineering,RAG,0,,3
-AI Engineering,Agents,0,,2
-AI Engineering,Finetuning,0,,1
-AI Engineering,Dataset engineering,2,https://github.com/mdeleon6/rpg-classifier-eval/blob/main/analysis.ipynb,2
-AI Engineering,Inference optimization,0,,1
-AI Engineering,Architecture & feedback,0,,2
-Data Analytics,Ask,3,https://github.com/mdeleon6/indie-rpg-pricing-analysis;notes/case-study-telemetry-audit.md,3
-Data Analytics,Prepare,3,notes/case-study-telemetry-audit.md,3
-Data Analytics,Process,3,notes/case-study-telemetry-audit.md;notes/process-tidy-data.md,3
-Data Analytics,Analyze,3,https://github.com/mdeleon6/indie-rpg-pricing-analysis/blob/main/analysis.ipynb,3
-Data Analytics,Share,3,https://indie-rpg-pricing.streamlit.app/,3
-Data Analytics,Python for analysis,3,https://github.com/mdeleon6/indie-rpg-pricing-analysis;https://github.com/mdeleon6/ai-data-skills-hub,3
+track,factor,level,target
+AI Engineering,Foundation models,0,2
+AI Engineering,Evaluation,3,3
+AI Engineering,Prompt engineering,2,3
+AI Engineering,RAG,0,3
+AI Engineering,Agents,0,2
+AI Engineering,Finetuning,0,1
+AI Engineering,Dataset engineering,2,2
+AI Engineering,Inference optimization,0,1
+AI Engineering,Architecture & feedback,0,2
+Data Analytics,Ask,3,3
+Data Analytics,Prepare,3,3
+Data Analytics,Process,3,3
+Data Analytics,Analyze,3,3
+Data Analytics,Share,3,3
+Data Analytics,Python for analysis,3,3
