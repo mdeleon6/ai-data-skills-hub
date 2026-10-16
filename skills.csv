@@ -1,8 +1,8 @@
 track,factor,level,target
 AI Engineering,Foundation models,0,2
 AI Engineering,Evaluation,3,3
-AI Engineering,Prompt engineering,2,3
-AI Engineering,RAG,0,3
+AI Engineering,Prompt engineering,3,3
+AI Engineering,RAG,3,3
 AI Engineering,Agents,0,2
 AI Engineering,Finetuning,0,1
 AI Engineering,Dataset engineering,2,2

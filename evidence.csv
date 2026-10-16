@@ -12,3 +12,7 @@ Analyze,Indie RPG pricing analysis (notebook),"Review scores by price band with 
 Share,Indie RPG pricing analysis (live app),"Answer-first results page: headline, key numbers, one chart with uncertainty, caveats",https://indie-rpg-pricing.streamlit.app/
 Python for analysis,Indie RPG pricing analysis (code),"pandas analysis: joins, group-bys, binning and a hand-written bootstrap",https://github.com/mdeleon6/indie-rpg-pricing-analysis
 Python for analysis,Skills hub (code),"This hub: a Streamlit app built on two joined tables, with a radar chart and evidence cards",https://github.com/mdeleon6/ai-data-skills-hub
+RAG,Canada Labour Code RAG (live app),"Plain-language answers with section citations; BM25 retrieval, Claude answers, password-gated live mode",https://canada-labour-code-rag.streamlit.app/
+RAG,Canada Labour Code RAG (notebook),"Corpus from the official XML, hit@k retrieval eval, citation scorecard, k=5 vs k=9 decision",https://github.com/mdeleon6/canada-labour-code-rag/blob/main/analysis.ipynb
+Prompt engineering,Canada Labour Code RAG (prompt),"System prompt written, tested and debugged by me: grounded answers, citations, honest 'not covered'",https://github.com/mdeleon6/canada-labour-code-rag/blob/main/prompt.py
+Evaluation,Canada Labour Code RAG (notebook),"Hand-labelled test set with traps, documented relabel, rubric-based manual review",https://github.com/mdeleon6/canada-labour-code-rag/blob/main/analysis.ipynb
